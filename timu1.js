@@ -1,7 +1,35 @@
 var v = "题库题数：1546（2015.05.09更新）";
 alert("脚本加载完成。\n如果您为使用此脚本支付了任何费用，那么恭喜您，您被坑了。\n\n按确定开始执行。");
-var b = function(q){
-  switch(q){
+var allQ = [];
+$(".examLi").each(function(){
+    allQ.push($(this).text());
+});
+var counter = 0;
+for(var i = 1; i <= 20; i++){
+    var thisQ = allQ[i].split(" ");
+    var q = thisQ[64].substring(0, thisQ[64].length - 1); //问题
+    //答案
+    var a = [];
+    for(var ii = 112; ii <= 172; ii += 20){
+        a.push(thisQ[ii].substring(1, thisQ[ii].length - 1));
+    }
+    var rightA = getAns(q); //获取正确答案
+    if(a.indexOf(rightA) > -1){
+        $(".examLi").eq(i) //找到正确的题
+            .find("li").eq(a.indexOf(rightA)) //找到正确的选项
+                .addClass("currSolution"); //选择选项
+    }else{
+        counter += 1;
+        if(rightA !== undefined){ //题库错误处理
+            alert("题库错误！\n问题：\"" + q + "\"\n返回的答案：\"" + rightA + "\"\n捕获的答案列表：" + a);
+        }
+    }
+}
+alert("答题完成，有" + counter  +"道题没填写（题库中没有或返回的答案无效）。")
+//题库函数
+function getAns (q){
+// 79 = 79
+switch(q){
 case "以下哪一位数学家不是法国人？": return ".黎曼";
 case "当PCl5 = PCl3 +Cl2的化学平衡常数Kc=1.8M时，在0.5L的容器中加入0.15molPCl5,求平衡后Cl2的浓度": return ".0.26M";
 case "以下哪种颜色不属于色光三原色？": return ".黄";
@@ -33,5 +61,5 @@ case "拿破仑在从厄尔巴岛逃回法国，到兵败滑铁卢再次流放�
 case "剧毒NaCN(氰化钠)的水解产物HCN是什么味道": return ".苦杏仁味";
 case "金鱼的卵什么颜色的才能孵化": return ".淡青色";
 default: return undefined;
-  };
-};
+}} //结束switch和题库函数
+} //结束运行确认
