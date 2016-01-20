@@ -132,6 +132,7 @@ case "发评论正确的姿势是？": return ".讨论与视频有关内容";
 case "遇到非常明显的钓鱼引战评论应当？": return ".举报并填写适当的理由";
 case "引战弹幕会造成什么影响？": return ".影响大家的观看体验";
 case "哪种发弹幕的方式会被禁言？": return ".遮挡屏幕的无关竖排弹幕";
+case "观看视频正确的姿势是？": return ".保持屋内明亮";
 //
 default: return undefined;
 }} //结束switch和题库函数
