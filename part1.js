@@ -130,6 +130,7 @@ case "遇到淘宝广告弹幕，下面哪个是合适的？": return ".举报�
 case "对某个视频突然不想看了怎么办？": return ".默默关掉视频";
 case "发评论正确的姿势是？": return ".讨论与视频有关内容";
 case "遇到非常明显的钓鱼引战评论应当？": return ".举报并填写适当的理由";
+case "引战弹幕会造成什么影响？": return ".影响大家的观看体验";
 //
 default: return undefined;
 }} //结束switch和题库函数
