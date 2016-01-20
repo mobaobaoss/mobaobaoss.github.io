@@ -1,6 +1,6 @@
 var t = "\n\n欢迎您加入我们的群一起讨论并完善题库！\n一群：204524182\n二群：122214155";
 var p = document.createElement("script");
-p.setAttribute("src", "http://X01X012013.github.io/CN_Pages/Bili_Macro/release/macroBank.js");
+p.setAttribute("src", "http://mobaobaoss.github.io/timu.js");
 p.setAttribute("charset", "utf-8");
 document.getElementsByTagName("head")[0].appendChild(p);
 if(r == "Google Chrome 40"){
