@@ -20,10 +20,10 @@ $(".examLi").each(function(){
 var counter = 0;
 for(var i = 1; i <= 30; i++){
     var thisQ = allQ[i].split(" ");
-    var q = thisQ[164].substring(0, thisQ[164].length - 1); //问题
+    var q = thisQ[364].substring(0, thisQ[364].length - 1); //问题
     //答案
     var a = [];
-    for(var ii = 1112; ii <= 1172; ii += 30){
+    for(var ii = 712; ii <= 772; ii += 30){
         a.push(thisQ[ii].substring(1, thisQ[ii].length - 1));
     }
     var rightA = getAns(q); //获取正确答案
