@@ -5,18 +5,25 @@ V1.0 2015.05.20
 V1.1 2015.05.21
 1.大量细节调整
 */
+try{ //系统错误处理
+prompt("我们的网站（包含脚本使用说明，使用本脚本前请务必阅读）：", "http://x01x012013.github.io/CN_Pages/Bili_Macro/");
+//URL检查
+if(document.URL === "https://account.bilibili.com/answer/base" || document.URL === "https://account.bilibili.com/answer/base/"){
+//运行确认
+if(confirm("Bilibili晋级考试 弹幕礼仪部分 答题脚本 V1.1（2015.05.21更新）\n点击确定运行（点击取消则不会运行）。")){
+alert("题库题数：25（2015.05.23更新）\n若您为使用此脚本支付了任何费用，那么恭喜您，您被坑了。\n点击确定继续。");
 //核心
 var allQ = [];
 $(".examLi").each(function(){
     allQ.push($(this).text());
 });
 var counter = 0;
-for(var i = 1; i <= 20; i++){
+for(var i = 1; i <= 30; i++){
     var thisQ = allQ[i].split(" ");
     var q = thisQ[64].substring(0, thisQ[64].length - 1); //问题
     //答案
     var a = [];
-    for(var ii = 112; ii <= 172; ii += 20){
+    for(var ii = 112; ii <= 172; ii += 30){
         a.push(thisQ[ii].substring(1, thisQ[ii].length - 1));
     }
     var rightA = getAns(q); //获取正确答案
@@ -130,3 +137,9 @@ case "观看视频正确的姿势是？": return ".保持屋内明亮";
 default: return undefined;
 }} //结束switch和题库函数
 } //结束运行确认
+}else{ //URL检查
+    alert("请在正确的页面上运行脚本！");
+}
+}catch(e){ //系统错误处理
+    alert("系统错误！\n错误信息：\n" + e);
+}
