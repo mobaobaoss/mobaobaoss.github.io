@@ -8,7 +8,7 @@ V1.1 2015.05.21
 try{ //系统错误处理
 prompt("我们的网站（包含脚本使用说明，使用本脚本前请务必阅读）：", "http://x01x012013.github.io/CN_Pages/Bili_Macro/");
 //URL检查
-if(document.URL === "https://account.bilibili.com/answer/promotion" || document.URL === "https://account.bilibili.com/answer/promotion"){
+if(document.URL === "https://account.bilibili.com/answer/promotion/" || document.URL === "https://account.bilibili.com/answer/promotion/"){
 //运行确认
 if(confirm("Bilibili晋级考试 弹幕礼仪部分 答题脚本 V1.1（2015.05.21更新）\n点击确定运行（点击取消则不会运行）。")){
 alert("题库题数：25（2015.05.23更新）\n若您为使用此脚本支付了任何费用，那么恭喜您，您被坑了。\n点击确定继续。");
