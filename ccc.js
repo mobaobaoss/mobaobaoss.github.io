@@ -18,12 +18,12 @@ $(".examLi").each(function(){
     allQ.push($(this).text());
 });
 var counter = 0;
-for(var i = 1; i <= 30; i++){
+for(var i = 1; i <= 20; i++){
     var thisQ = allQ[i].split(" ");
     var q = thisQ[64].substring(0, thisQ[64].length - 1); //问题
     //答案
     var a = [];
-    for(var ii = 112; ii <= 172; ii += 30){
+    for(var ii = 112; ii <= 172; ii += 20){
         a.push(thisQ[ii].substring(1, thisQ[ii].length - 1));
     }
     var rightA = getAns(q); //获取正确答案
