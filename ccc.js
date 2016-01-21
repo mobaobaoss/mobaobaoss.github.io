@@ -102,6 +102,29 @@ case "以下那个Adobe的软件是用于剪辑视频的？": return ".Premiere"
 case "赤道半径长为？": return ".6378km";
 case "二战德国闪电战的创立者是谁？": return ".古德里安";
 case "著名的狼群战术是谁提出来的？": return ".卡尔·邓尼茨";
+case "光年为光在真空中一年内行经的距离，这里的一年为？": return "光年为光在真空中一年内行经的距离，这里的一年为？";
+case "以下那种波不是电磁波？": return ".超声波";
+case "float=3.1415926;printf("%.2f",d);": return ".3.14";
+case "孤岛危机又叫什么": return ".显卡危机";
+case "用鼠标在电脑上绘图叫做什么？": return ".鼠绘";
+case "我国4个直辖市中哪个面积最大？": return ".重庆";
+case "以下哪种力不属于性质力？": return ".压力";
+case "c语言中换行符是？": return ".\n";
+case "世界上第一家第三方游戏开发公司叫什么？": return ".KONAMI";
+case "截止于2012年为止，宇宙中已知的最大恒星是下列中的哪一个？": return ".VY红超巨星";
+case "地球距离月球之间的距离为？": return ".384,400千米";
+case "第六天魔王是？": return ".织田信长";
+case "Android操作系统是以什么为基础开发的操作系统？": return ".Linux";
+case "2003娘，或称2K3娘，是哪个公司公司推出的的拟人化萌娘。": return ".微软";
+case "DMSO的中文名称是？": return ".二甲基亚砜";
+case "下列哪一个检验是否具有人工智能的测试？": return ".图灵测试";
+case "以下哪种化♂学物质是存在的": return ".正戊烷";
+case "以下哪种花卉最容易被从中间爆开？": return ".菊花";
+case "下列哪个不是Microsoft产品": return ".Android";
+case "当一枚硬币加速到光速的8/9时,它": return ".质量比之前大";
+case "美国历史上第一位黑人总统是": return ".Barack Hussein Obama II";
+case "以下哪句不出自与“马嵬坡下黄土中，不见红颜空死处”同首诗？": return ".回眸一笑百媚生，此时无声胜有声";
+case "以下哪一种细胞器附着在内质网上？": return ".高尔基体";
 //
 default: return undefined;
 }} //结束switch和题库函数
