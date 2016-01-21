@@ -8,7 +8,7 @@ V1.1 2015.05.21
 try{ //系统错误处理
 prompt("我们的网站（包含脚本使用说明，使用本脚本前请务必阅读）：", "http://x01x012013.github.io/CN_Pages/Bili_Macro/");
 //URL检查
-if(document.URL === "https://account.bilibili.com/answer/promotion/" || document.URL === "https://account.bilibili.com/answer/promotion/"){
+if(document.URL === "https://account.bilibili.com/answer/promotion" || document.URL === "https://account.bilibili.com/answer/promotion/"){
 //运行确认
 if(confirm("Bilibili晋级考试 弹幕礼仪部分 答题脚本 V1.1（2015.05.21更新）\n点击确定运行（点击取消则不会运行）。")){
 alert("题库题数：25（2015.05.23更新）\n若您为使用此脚本支付了任何费用，那么恭喜您，您被坑了。\n点击确定继续。");
@@ -20,10 +20,10 @@ $(".examLi").each(function(){
 var counter = 0;
 for(var i = 1; i <= 20; i++){
     var thisQ = allQ[i].split(" ");
-    var q = thisQ[364].substring(0, thisQ[364].length - 1); //问题
+    var q = thisQ[64].substring(0, thisQ[64].length - 1); //问题
     //答案
     var a = [];
-    for(var ii = 712; ii <= 772; ii += 20){
+    for(var ii = 112; ii <= 172; ii += 20){
         a.push(thisQ[ii].substring(1, thisQ[ii].length - 1));
     }
     var rightA = getAns(q); //获取正确答案
@@ -74,6 +74,56 @@ case "传说中从天而降砸到牛顿的是": return ".苹果";
 case "拿破仑在从厄尔巴岛逃回法国，到兵败滑铁卢再次流放，一共重返帝位多少天？": return ".101";
 case "剧毒NaCN(氰化钠)的水解产物HCN是什么味道": return ".苦杏仁味";
 case "金鱼的卵什么颜色的才能孵化": return ".淡青色";
+case "C语言中，如果ar是个数组，那么表达式ar[i]与什么等价？": return ".*(ar+i)";
+case "谁罪大滔天，搞到百姓怨声载道": return ".索尼";
+case "春秋战国时期，哪家学说的主张是“兼爱”“非攻”": return ".墨家";
+case "薛定谔的猫是薛定谔的一个著名实验，其不涉及的问题是": return ".量子的叠加态";
+case "李靖的三儿子叫什么(三个字)": return ".李狗蛋";
+case "NTSC制式的视频帧率是": return ".29.970fps";
+case "日本剑圣宫本武藏的自创的武术是什么？": return ".二天一流";
+case "造成温室效应最重要的气体是？": return ".二氧化碳";
+case "纳米是一种？": return ".长度单位";
+case "iphone 4之后苹果推出的手机是": return ".iphone 4S";
+case "硝基盐酸为什么能溶解金？": return ".氧化";
+case "“夜阑卧听风吹雨，铁马冰河入梦来”是谁的诗句？": return ".陆游";
+case "IBM5100的CPU型号？": return ".P-III";
+case "经过减数分裂的子细胞, 会有多少染色体": return ".一半";
+case "游戏主机Wii U是哪家公司发售的": return ".任天堂";
+case "不属于热的传递方式的是": return ".热运送";
+case "以下哪种手机品牌由于质量过”硬“而获得了砖头的美誉？": return ".诺基亚";
+case "以下哪种花卉最容易被从中间爆开？": return ".菊花";
+case "电磁炮发射炮弹用到的原理是": return ".洛伦茨力";
+case "“疑是地上霜”的上一句是？": return ".床前明月光";
+case "量子力学的创始人是？": return ".普朗克";
+case "将一批粗铜矿石由昆明运到上海精炼，运输路线哪条最经济？": return ".贵昆线—川黔线—长江航线";
+case "AE中将要如何做出视频信号干扰以及画面抖动的效果？": return ".AE插件Twitch";
+case "以下哪一个是北京地方时经纬坐标？": return ".北纬39.9°，东经116.3°";
+case "以下那个Adobe的软件是用于剪辑视频的？": return ".Premiere";
+case "赤道半径长为？": return ".6378km";
+case "二战德国闪电战的创立者是谁？": return ".古德里安";
+case "著名的狼群战术是谁提出来的？": return ".卡尔·邓尼茨";
+case "光年为光在真空中一年内行经的距离，这里的一年为？": return "光年为光在真空中一年内行经的距离，这里的一年为？";
+case "以下那种波不是电磁波？": return ".超声波";
+case "孤岛危机又叫什么": return ".显卡危机";
+case "用鼠标在电脑上绘图叫做什么？": return ".鼠绘";
+case "我国4个直辖市中哪个面积最大？": return ".重庆";
+case "以下哪种力不属于性质力？": return ".压力";
+case "c语言中换行符是？": return ".\n";
+case "世界上第一家第三方游戏开发公司叫什么？": return ".KONAMI";
+case "截止于2012年为止，宇宙中已知的最大恒星是下列中的哪一个？": return ".VY红超巨星";
+case "地球距离月球之间的距离为？": return ".384,400千米";
+case "第六天魔王是？": return ".织田信长";
+case "Android操作系统是以什么为基础开发的操作系统？": return ".Linux";
+case "2003娘，或称2K3娘，是哪个公司公司推出的的拟人化萌娘。": return ".微软";
+case "DMSO的中文名称是？": return ".二甲基亚砜";
+case "下列哪一个检验是否具有人工智能的测试？": return ".图灵测试";
+case "以下哪种化♂学物质是存在的": return ".正戊烷";
+case "以下哪种花卉最容易被从中间爆开？": return ".菊花";
+case "下列哪个不是Microsoft产品": return ".Android";
+case "当一枚硬币加速到光速的8/9时,它": return ".质量比之前大";
+case "美国历史上第一位黑人总统是": return ".Barack Hussein Obama II";
+case "以下哪句不出自与“马嵬坡下黄土中，不见红颜空死处”同首诗？": return ".回眸一笑百媚生，此时无声胜有声";
+case "以下哪一种细胞器附着在内质网上？": return ".高尔基体";
 //
 default: return undefined;
 }} //结束switch和题库函数
