@@ -204,6 +204,20 @@ case "单摆的等时性是谁首先发现的？": return ".伽利略";
 case "一个正常成年人有多少块骨头？": return ".206";
 case "Adobe Audition中让音乐产生渐渐消失的效果的操作叫什么名字？": return ".淡出";
 case "警察经常用来检验血液的试剂": return ".3-硝基邻苯二甲酰肼";
+case "当电化学反应的两极反应分别在两个容器内进行时，两个容器之间需要有什么相连": return ".盐桥";
+case "南极上空臭氧空洞的形成是因为？": return ".人类活动中排放大量氟化合物的缘故";
+case "国际标准化组织ISO制定的OSI模型中，路由器工作在哪一层？": return ".网络层";
+case "质能方程的公式？": return ".E=MC²";
+case "天文单位缩写的标准符号为？": return ".AU";
+case "人体安全电压是多少伏": return ".37伏以下";
+case "以下哪个是常用数位板绘图软件？": return ".SAI";
+case "下列哪种立体匹配算法不是全局匹配算法？": return ".SSD";
+case "水分子的键角是？": return ".104.5";
+case "“不学礼，无以立”。出于何处？": return ".《论语》";
+case "生物自然选择学说是谁创立的？": return ".达尔文";
+case "在1993年Windows 95的测试版中的开发版本号是哪一个？": return ".Chicago";
+case "以下哪个不是描述气体的状态参量？": return ".ρ";
+case "下列哪种说法是错误的": return ".将文件改为只读方式就不会感染病毒";
 //
 default: return undefined;
 }} //结束switch和题库函数
