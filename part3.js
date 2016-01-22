@@ -141,6 +141,27 @@ case "微软最新家用机的名字是": return ".xboxone";
 case "商纣王通过什么方式使得周文王不能成大业": return ".囚禁了他";
 case "上海“老克勒”中的“克勒”一词是出自哪个外来词语？": return ".color";
 case "二战时德国原子弹研发领导人是谁": return ".沃纳·海森堡";
+case "在电脑上使用模拟器，在不改变游戏内核的情况下，使用工具辅助操作的游戏方式为？": return ".TAS";
+case "3dmax中旋转视图按哪个键": return ".alt+鼠标中键";
+case "当PCl5 = PCl3 +Cl2的化学平衡常数Kc=1.8M时，在0.5L的容器中加入0.15molPCl5,求平衡后Cl2的浓度": return ".0.26M";
+case "JavaScript和ActionScript是基于什么标准的？": return ".ECMA标准";
+case "可以无损做到的是哪一项": return ".混缩";
+case "下列哪种物质每年致死人数最多？": return ".一氧化二氢";
+case "气体理想方程是": return ".PV=nRT";
+case "我國哪條高鐵線路被譽為世界最長的高鐵線路": return ".京廣高鐵";
+case "不属于传说中四灵兽的是？": return ".麒麟";
+case "索尼的第一部游戏主机PlayStation是在哪一年推出的？": return ".1994年";
+case "哪种主机不是次世代主机": return ".GBA";
+case "地理上区分我国南北方以____为分界线": return ".秦岭-淮河";
+case "国际通用的标准音的频率是？": return ".440Hz";
+case "夜盲症是缺哪种维生素导致的？": return ".维生素A";
+case "下列不属于生物化学范畴的是": return ".药物与生物体的关系";
+case "请问河内著名的____古街在哪个位置？": return ".三十六 市中心";
+case "第一位俄罗斯沙皇是？": return ".伊凡雷帝";
+case "宇宙第一速度的大小": return ".7.9km/s";
+case "以纯粹优美的音乐来叙述表达作者的情感的音乐模式被称为": return ".纯音乐";
+case "我国北京属于那种地形": return ".平原";
+case "商鞅变法没有涉及哪一条？": return ".统一度量衡";
 //
 default: return undefined;
 }} //结束switch和题库函数
