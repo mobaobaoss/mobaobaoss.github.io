@@ -218,6 +218,16 @@ case "生物自然选择学说是谁创立的？": return ".达尔文";
 case "在1993年Windows 95的测试版中的开发版本号是哪一个？": return ".Chicago";
 case "以下哪个不是描述气体的状态参量？": return ".ρ";
 case "下列哪种说法是错误的": return ".将文件改为只读方式就不会感染病毒";
+case "雪融化后会变成什么?": return ".水";
+case "1电子伏特等于多少焦耳？": return ".1.602×10^-19";
+case "被称之为达尔文的斗犬的是历史上哪一位人物？": return ".托马斯•赫胥黎";
+case "以下哪一个选项指的是与其他三个不同的选项？": return ".布达佩斯";
+case "QVGA 是指解像度為？": return ".240×320";
+case "光的波动性是谁最先发现的？": return ".麦克斯韦";
+case "我国大陆家庭电路的电压统一使用为多少伏？": return ".220";
+case "制取氧气的几种方法中，无论是哪一种都不需要的是": return ".重铬酸钾";
+case "正经的说，USB是指": return ".通用串行总线控制器";
+case "下列高等植物器官中不具有双层膜结构的是": return ".液泡";
 //
 default: return undefined;
 }} //结束switch和题库函数
