@@ -44,6 +44,10 @@ function getAns (q){
 // 79 = 79
 switch(q){
 //群主提供 25题 2015.05.20
+case "下列各项不属于电脑操作系统的是": return ".S60";
+case "以下时间哪一个节气是地球公转速度最慢的时候": return ".夏至";
+case "电子计算机技术在半个世纪中虽有很大进步， 但至今其运行仍遵循着一位科学 家提出的基本原理。他就是": return ".冯·诺依曼";
+case "在组织液回流中，淋巴回流的主要功能是重吸收": return ".蛋白质";
 case "汞的元素符号是？": return ".Hg";
 case "以下电源制造商哪家的总部不在台湾": return ".Flextronics";
 case " 第一宇宙速度是？km/s": return ".7.9";
