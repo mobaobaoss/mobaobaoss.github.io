@@ -124,6 +124,23 @@ case "当一枚硬币加速到光速的8/9时,它": return ".质量比之前大"
 case "美国历史上第一位黑人总统是": return ".Barack Hussein Obama II";
 case "以下哪句不出自与“马嵬坡下黄土中，不见红颜空死处”同首诗？": return ".回眸一笑百媚生，此时无声胜有声";
 case "以下哪一种细胞器附着在内质网上？": return ".高尔基体";
+case "角色制作3D模组的免费软件“MMD”的全称是？": return ".MikuMikuDance";
+case "出海远行的船，在视线中最后消失的是船的桅杆，既然水是平的，为什么会出现这种情况?": return ".海平面并不是平的，它和地球表面是平行的，是一个平滑的球面";
+case "“月有阴晴圆缺”，用科学的观点看待这件事，原因是？": return ".地球绕太阳转动，月球绕地球转动，两者转速不一样，出现偏角，使地球掩住了月球的一部分";
+case "你在一个地方先往南走10公里再往东走10公里，再往北走十公里，这时候你发现你回到了原处，这时候你看见了一只熊，请问这只熊是什么颜色的": return ".棕色";
+case "双子座流星雨出现在每年的": return ".12月左右";
+case "音MAD鬼畜作品原BGM多数选于DDR,jubeat,beatmania等音游，则该系列的制作团队名为？": return ".BEMANI";
+case "由Nintendo公司发售的8位游戏机的名称缩写是什么？": return ".FC";
+case "力的单位是什么？": return ".牛顿";
+case "下列哪个不是PSP的按键？": return ".☆";
+case "味精的主要成分是什么？": return ".谷氨酸钠";
+case "世界上最大的无脊椎动物是什么？": return ".乌贼";
+case "我国唯一一个具有五种地形的省区是哪里？": return ".四川省";
+case "现在我们知道，光是一种电磁波，那么同时，它也是一种——": return ".横波";
+case "微软最新家用机的名字是": return ".xboxone";
+case "商纣王通过什么方式使得周文王不能成大业": return ".囚禁了他";
+case "上海“老克勒”中的“克勒”一词是出自哪个外来词语？": return ".color";
+case "二战时德国原子弹研发领导人是谁": return ".沃纳·海森堡";
 //
 default: return undefined;
 }} //结束switch和题库函数
