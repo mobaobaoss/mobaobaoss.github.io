@@ -44,6 +44,13 @@ function getAns (q){
 // 79 = 79
 switch(q){
 //群主提供 25题 2015.05.20
+case "已知世界上最古老的英雄史诗中的主角名字是？": return ".吉尔伽美什";
+case "编程中的树的遍历分为哪三种？": return ".先序、中序、后序遍历";
+case "以下物质中酸性最弱的是": return ".硅酸";
+case "普朗克常量的物理符号是？": return ".h";
+case "1 infinite loop是哪个公司总部的地址？": return ".苹果";
+case "网页在不重载页面的情况下重绘部分页面的技术叫做啥？": return ".AJax";
+case "元素周期表中，周期数等于": return ".电子层数";
 case "以下哪些是成熟的植物细胞特有的结构？": return ".中央大液泡";
 case "在Android系统中，内核(Kernel)被储存于设备的哪一个分区中？": return ".Boot";
 case "格林尼治时间0点整相当于北京时间几点？": return ".八点";
