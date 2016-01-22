@@ -228,6 +228,17 @@ case "我国大陆家庭电路的电压统一使用为多少伏？": return ".22
 case "制取氧气的几种方法中，无论是哪一种都不需要的是": return ".重铬酸钾";
 case "正经的说，USB是指": return ".通用串行总线控制器";
 case "下列高等植物器官中不具有双层膜结构的是": return ".液泡";
+case "神话中，以下哪一位不是争夺金苹果的女神？": return ".厄里斯";
+case "战国时期的名将李牧一生无败绩，他是哪国人？": return ".赵国";
+case "日本哪个地方因亚洲表情新巨头而出名？": return ".兵库北";
+case "以下哪家不是显卡厂商？": return ".KFC";
+case "DOS的中文名是？": return ".磁盘操作系统";
+case "下列元素中电负性最大的是？": return ".氧";
+case "光的微粒说是谁提出？": return ".牛顿";
+case "下列哪个不是最早的“讲卫生除四害”之中的“四害”": return ".蟑螂";
+case "早进入青铜器时代的国家是？": return ".阿拉伯叙利亚";
+case "地理信息系统指的是": return ".GIS";
+case "以下哪位名人因are you ok而火？": return ".雷军";
 //
 default: return undefined;
 }} //结束switch和题库函数
