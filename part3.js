@@ -44,6 +44,12 @@ function getAns (q){
 // 79 = 79
 switch(q){
 //群主提供 25题 2015.05.20
+case "汞的元素符号是？": return ".Hg";
+case "以下电源制造商哪家的总部不在台湾": return ".Flextronics";
+case " 第一宇宙速度是？km/s": return ".7.9";
+case "大美利坚自由独立的第一枪在哪里打响": return ".莱克星顿";
+case "下列哪个不是天启四骑士": return ".战神";
+case "以下哪种属于纯净物": return ".冰水混合物";
 case "已知世界上最古老的英雄史诗中的主角名字是？": return ".吉尔伽美什";
 case "编程中的树的遍历分为哪三种？": return ".先序、中序、后序遍历";
 case "以下物质中酸性最弱的是": return ".硅酸";
