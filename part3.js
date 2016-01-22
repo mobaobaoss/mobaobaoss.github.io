@@ -239,6 +239,19 @@ case "下列哪个不是最早的“讲卫生除四害”之中的“四害”":
 case "早进入青铜器时代的国家是？": return ".阿拉伯叙利亚";
 case "地理信息系统指的是": return ".GIS";
 case "以下哪位名人因are you ok而火？": return ".雷军";
+case "动漫名Clannad的词根，比较公认的说法是那个国家（地区）的语言？": return ".巴伐利亚";
+case "以下掌机中哪一种没有触屏功能？": return ".PSP";
+case "珍珠港事件后，美国航母集群携什么轰炸机对日本本土进行了报复性轰炸？": return ".B-25“米切尔”";
+case "下列元素电负性最大的是？": return ".F";
+case "在水银泄漏时你该怎么办？": return ".在上面撒上硫磺粉末";
+case "使用哪种仪器，可以获得三维图象": return ".透射电子显微镜";
+case "GNU的初始人？": return ".Stallman";
+case "iPhone, iPad上的应用是用哪个语言编写的": return ".Objective C";
+case "物质波是由谁提出来的": return ".德布罗意";
+case "烧红镍球放入水中会有什么现象": return ".无现象";
+case "所谓的MNG格式是什么？": return ".Multiple image network graphics";
+case "根据VB理论，苯分子中没有下列哪种键？": return ".碳碳单键";
+case "一氧化二氢是什么？": return ".水";
 //
 default: return undefined;
 }} //结束switch和题库函数
