@@ -252,6 +252,13 @@ case "烧红镍球放入水中会有什么现象": return ".无现象";
 case "所谓的MNG格式是什么？": return ".Multiple image network graphics";
 case "根据VB理论，苯分子中没有下列哪种键？": return ".碳碳单键";
 case "一氧化二氢是什么？": return ".水";
+case "以下字母哪个不是碱基的缩写": return ".B";
+case " 以下人物中哪一位是矩阵力学的主要创立者？": return ".维尔纳·海森堡";
+case "下列哪场战役发生在1942年？": return ".勒热夫-瑟乔夫卡战役";
+case "饮用碳酸饮料最好用什么工具及原因？": return ".吸管（防止碳酸侵蚀牙齿）";
+case "化学中，苦味酸是___": return ".三硝基苯酚";
+case "科学常识，电流的磁效应和电磁感应分别由谁发现？": return ".奥斯特 法拉第";
+case "王水是以下那两种物质的混合溶液": return ".盐酸和硝酸";
 //
 default: return undefined;
 }} //结束switch和题库函数
