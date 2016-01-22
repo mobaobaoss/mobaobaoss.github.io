@@ -195,6 +195,15 @@ case "随着生命科学和计算机科学的迅猛发展， 生命科学和计�
 case "豌豆杂交实验是谁的实验？": return ".孟德尔";
 case "爱因斯坦通过以下哪项研究获得诺贝尔奖？": return ".光电效应";
 case "第一次世界大战以谁的死亡为导火线？": return ".斐迪南大公";
+case "上海动物园的新生猩猩叫什么名字？": return ".海弟";
+case "电子计算机发明于哪一年？": return ".1946年";
+case "科学区中经常被人玩坏的球的材料是": return ".镍";
+case "一公斤铁和一公斤棉花哪一个重": return ".一样重";
+case "江户时代划定的五街道不包含哪个？": return ".北陆道";
+case "单摆的等时性是谁首先发现的？": return ".伽利略";
+case "一个正常成年人有多少块骨头？": return ".206";
+case "Adobe Audition中让音乐产生渐渐消失的效果的操作叫什么名字？": return ".淡出";
+case "警察经常用来检验血液的试剂": return ".3-硝基邻苯二甲酰肼";
 //
 default: return undefined;
 }} //结束switch和题库函数
