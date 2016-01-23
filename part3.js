@@ -44,6 +44,9 @@ function getAns (q){
 // 79 = 79
 switch(q){
 //群主提供 25题 2015.05.20
+case "计算机的运算采用？": return ".二进位制";
+case "一般制作AMV或MAD使用的软件中哪一款是索尼的产品？": return ".VEGAS";
+case "下列不属于基本粒子的是": return ".重子";
 case "成年人及年长儿正常心胸比例不大于": return ".0.5";
 case "下列选项内哪两种混合后会生成氯气？": return ".84消毒液和洁厕灵";
 case "凹透镜可能对": return ".虚物成正立放大的实像";
