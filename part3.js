@@ -44,6 +44,15 @@ function getAns (q){
 // 79 = 79
 switch(q){
 //群主提供 25题 2015.05.20
+case "下列哪一项不属于高分子材料": return ".陶瓷";
+case "不是组成自然界的所有生命物体的三类物质是": return ".维生素";
+case "在使用KMPlayer进行连续截图时,应该使用那一项功能?": return ".捕获>高级捕获";
+case "以下哪一个不是冥王星的天然卫星": return ".阋神";
+case "以下哪部游戏设备拥有裸眼3D功能？": return ".3DS";
+case "相对论主要是由谁创立的？": return ".爱因斯坦";
+case " 虐猫狂人___,电磁狂魔___": return ".薛定谔，特斯拉";
+case "下列激素可以口服的是？": return ".甲状腺素";
+case "丰臣秀吉的家纹俗称是什么？": return ".太阁桐";
 case "计算机的运算采用？": return ".二进位制";
 case "一般制作AMV或MAD使用的软件中哪一款是索尼的产品？": return ".VEGAS";
 case "下列不属于基本粒子的是": return ".重子";
