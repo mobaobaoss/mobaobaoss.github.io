@@ -44,6 +44,7 @@ function getAns (q){
 // 79 = 79
 switch(q){
 //群主提供 25题 2015.05.20
+case "傅里叶级数是傅里叶在研究哪种物理现象时提出的？": return ".热传导";
 case "以下哪种物质碱性最强": return ".RbOH";
 case "以下哪个不是计算机常用的颜色模式？": return ".LBA模式";
 case "USB3.0 的插口通常为何种颜色？": return ".蓝";
