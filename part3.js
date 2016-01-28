@@ -44,6 +44,8 @@ function getAns (q){
 // 79 = 79
 switch(q){
 //群主提供 25题 2015.05.20
+case "以下哪种物质碱性最强": return ".RbOH";
+case "以下哪个不是计算机常用的颜色模式？": return ".LBA模式";
 case "USB3.0 的插口通常为何种颜色？": return ".蓝";
 case "一战中最先使用毒气弹的战役是": return ".凡尔登战役";
 case "薛定谔有一只什么宠物？": return ".猫";
