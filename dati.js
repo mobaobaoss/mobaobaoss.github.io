@@ -5,25 +5,18 @@ V1.0 2015.05.20
 V1.1 2015.05.21
 1.大量细节调整
 */
-try{ //系统错误处理
-prompt("我们的网站（包含脚本使用说明，使用本脚本前请务必阅读）：", "http://x01x012013.github.io/CN_Pages/Bili_Macro/");
-//URL检查
-if(document.URL === "https://account.bilibili.com/answer/promotion" || document.URL === "https://account.bilibili.com/answer/promotion/"){
-//运行确认
-if(confirm("Bilibili晋级考试 弹幕礼仪部分 答题脚本 V1.1（2015.05.21更新）\n点击确定运行（点击取消则不会运行）。")){
-alert("题库题数：25（2015.05.23更新）\n若您为使用此脚本支付了任何费用，那么恭喜您，您被坑了。\n点击确定继续。");
 //核心
 var allQ = [];
 $(".examLi").each(function(){
     allQ.push($(this).text());
 });
 var counter = 0;
-for(var i = 1; i <= 30; i++){
+for(var i = 1; i <= 20; i++){
     var thisQ = allQ[i].split(" ");
     var q = thisQ[64].substring(0, thisQ[64].length - 1); //问题
     //答案
     var a = [];
-    for(var ii = 112; ii <= 172; ii += 30){
+    for(var ii = 112; ii <= 172; ii += 20){
         a.push(thisQ[ii].substring(1, thisQ[ii].length - 1));
     }
     var rightA = getAns(q); //获取正确答案
@@ -44,93 +37,97 @@ function getAns (q){
 // 79 = 79
 switch(q){
 //群主提供 25题 2015.05.20
-case "以下哪一位数学家不是法国人？": return ".黎曼";
-case "当PCl5 = PCl3 +Cl2的化学平衡常数Kc=1.8M时，在0.5L的容器中加入0.15molPCl5,求平衡后Cl2的浓度": return ".0.26M";
-case "以下哪种颜色不属于色光三原色？": return ".黄";
-case "iphone 4之后苹果推出的手机是": return ".iphone 4S";
-case "c++的int类型通常占用几个字节？": return "4（byte）";
-case "冥王星的公转周期?": return ".248地球年";
-case "世界上用图像显示的第一个电子游戏是什么？": return ".Core War";
-case "AIDS的全称是什么?": return ".获得性免疫缺陷综合征";
-case "计算机编程中常见的if语句是？": return ".判断语句";
-case "风靡一时的游戏主机“红白机”全名为？": return ".Family Computer";
-case "当天空出现了鱼鳞云(透光高积云)，下列哪种天气现象会发生？": return ".降雨";
-case "一直被拿去做实验从未被超越的动物是": return ".小白鼠";
-case "以下作品中哪一个完全没有使用3D技术": return ".LOVELIVE TV版";
-case "以下哪款耳机采用了特斯拉技术": return ".拜亚T1";
-case "美国历史上第一位黑人总统是": return ".Barack Hussein Obama II";
-case "以下哪种功率放大器效率最低？": return ".甲类";
-case "RGBA中的A是指？": return ".Alpha";
-case "“不学礼，无以立”。出于何处？": return ".《论语》";
-case "静电场的高斯定理和环路定理说明静电场是个什么场？": return ".有源有旋场";
-case "新生物性状产生的根本原因在于？": return ".基因重组";
-case "一个农田的全部生物属于？": return ".群落";
-case "北回归线没有从下列哪个省中穿过？": return ".福建";
-case "什么是“DTS”": return ".数字家庭影院系统";
-case "被誉为生命科学“登月”计划的是": return ".人类基因组计划";
-case "下列有关电子显微镜的说法正确的是": return ".常用的有透射电镜和扫描电子镜";
-case "天文学上，红移是指": return ".天体离我们远去";
-case "传说中从天而降砸到牛顿的是": return ".苹果";
-case "拿破仑在从厄尔巴岛逃回法国，到兵败滑铁卢再次流放，一共重返帝位多少天？": return ".101";
-case "剧毒NaCN(氰化钠)的水解产物HCN是什么味道": return ".苦杏仁味";
-case "金鱼的卵什么颜色的才能孵化": return ".淡青色";
-case "C语言中，如果ar是个数组，那么表达式ar[i]与什么等价？": return ".*(ar+i)";
-case "谁罪大滔天，搞到百姓怨声载道": return ".索尼";
-case "春秋战国时期，哪家学说的主张是“兼爱”“非攻”": return ".墨家";
-case "薛定谔的猫是薛定谔的一个著名实验，其不涉及的问题是": return ".量子的叠加态";
-case "李靖的三儿子叫什么(三个字)": return ".李狗蛋";
-case "NTSC制式的视频帧率是": return ".29.970fps";
-case "日本剑圣宫本武藏的自创的武术是什么？": return ".二天一流";
-case "造成温室效应最重要的气体是？": return ".二氧化碳";
-case "纳米是一种？": return ".长度单位";
-case "iphone 4之后苹果推出的手机是": return ".iphone 4S";
-case "硝基盐酸为什么能溶解金？": return ".氧化";
-case "“夜阑卧听风吹雨，铁马冰河入梦来”是谁的诗句？": return ".陆游";
-case "IBM5100的CPU型号？": return ".P-III";
-case "经过减数分裂的子细胞, 会有多少染色体": return ".一半";
-case "游戏主机Wii U是哪家公司发售的": return ".任天堂";
-case "不属于热的传递方式的是": return ".热运送";
-case "以下哪种手机品牌由于质量过”硬“而获得了砖头的美誉？": return ".诺基亚";
-case "以下哪种花卉最容易被从中间爆开？": return ".菊花";
-case "电磁炮发射炮弹用到的原理是": return ".洛伦茨力";
-case "“疑是地上霜”的上一句是？": return ".床前明月光";
-case "量子力学的创始人是？": return ".普朗克";
-case "将一批粗铜矿石由昆明运到上海精炼，运输路线哪条最经济？": return ".贵昆线—川黔线—长江航线";
-case "AE中将要如何做出视频信号干扰以及画面抖动的效果？": return ".AE插件Twitch";
-case "以下哪一个是北京地方时经纬坐标？": return ".北纬39.9°，东经116.3°";
-case "以下那个Adobe的软件是用于剪辑视频的？": return ".Premiere";
-case "赤道半径长为？": return ".6378km";
-case "二战德国闪电战的创立者是谁？": return ".古德里安";
-case "著名的狼群战术是谁提出来的？": return ".卡尔·邓尼茨";
-case "光年为光在真空中一年内行经的距离，这里的一年为？": return "光年为光在真空中一年内行经的距离，这里的一年为？";
-case "以下那种波不是电磁波？": return ".超声波";
-case "孤岛危机又叫什么": return ".显卡危机";
-case "用鼠标在电脑上绘图叫做什么？": return ".鼠绘";
-case "我国4个直辖市中哪个面积最大？": return ".重庆";
-case "以下哪种力不属于性质力？": return ".压力";
-case "c语言中换行符是？": return ".\n";
-case "世界上第一家第三方游戏开发公司叫什么？": return ".KONAMI";
-case "截止于2012年为止，宇宙中已知的最大恒星是下列中的哪一个？": return ".VY红超巨星";
-case "地球距离月球之间的距离为？": return ".384,400千米";
-case "第六天魔王是？": return ".织田信长";
-case "Android操作系统是以什么为基础开发的操作系统？": return ".Linux";
-case "2003娘，或称2K3娘，是哪个公司公司推出的的拟人化萌娘。": return ".微软";
-case "DMSO的中文名称是？": return ".二甲基亚砜";
-case "下列哪一个检验是否具有人工智能的测试？": return ".图灵测试";
-case "以下哪种化♂学物质是存在的": return ".正戊烷";
-case "以下哪种花卉最容易被从中间爆开？": return ".菊花";
-case "下列哪个不是Microsoft产品": return ".Android";
-case "当一枚硬币加速到光速的8/9时,它": return ".质量比之前大";
-case "美国历史上第一位黑人总统是": return ".Barack Hussein Obama II";
-case "以下哪句不出自与“马嵬坡下黄土中，不见红颜空死处”同首诗？": return ".回眸一笑百媚生，此时无声胜有声";
-case "以下哪一种细胞器附着在内质网上？": return ".高尔基体";
+case " 在视频中版聊会？": return ".遮挡屏幕影响别人观看";
+case "视频刚开始播放，以下哪个弹幕较为适合？": return ".UP主辛苦了";
+case "下列哪一条不是剧透弹幕？": return ".我非常喜欢这个角色";
+case "以下哪种弹幕不会被禁言？": return ".和谐吐槽";
+case "播放一个视频后发现视频内容并不是自己所想的那样，怎么样做是正确的？": return ".关闭视频就好了";
+case "当观看视频过程中，有人发无关视频的av号时应该？": return ".举报该弹幕";
+case "当你知道新番中某角色会死亡的时候应该？": return ".安静观看并不透露她将要死亡";
+case "下面哪条不是黑角色的弹幕？": return ".男主女主快去结婚";
+case "当观看过程中有发现有恶意黑自己喜欢角色的弹幕时应该？": return ".举报该弹幕";
+case "下列哪一条符合弹幕礼仪？": return ".合适的吐槽弹幕";
+case "发吐槽弹幕的正确姿势？": return ".文明幽默";
+case "看到自己喜欢的视频时以下哪种做法是正确的？": return ".收藏视频";
+case "看到鬼畜视频，哪种弹幕是合适的？": return ".做的不错,支持一下";
+case "在手机评测视频里，哪种弹幕是合适的？": return ".客观分析手机优缺点";
+case "在科技区观看视频过程中应该？": return ".在评论区进行科普补充";
+case "在观看游戏区视频时，那种符合弹幕礼仪？": return ".谈论技巧";
+case "在视频里刷屏属于以下哪种？": return ".违规弹幕";
+case "Tag的正确用途？": return ".用于搜索";
+case "在视频中突然出现发神秘网站的弹幕哪个是正确的做法？": return ".举报该弹幕";
+case "在评论区发现色情头像正确的做法？": return ".举报该评论并认真填写举报理由";
+case "下面哪个不是无意义灌水评论？": return ".视频的相关补充信息";
+case "填写举报理由时应当？": return ".正确填写对方违规的类型";
+case "在观看新番时，遇到”今天台风来了停课啦”这样的弹幕是属于以下哪种？": return ".视频内容不相关弹幕";
+case "如何举报弹幕？": return ".鼠标右键";
+case "“xxx全家爆炸”是属于什么弹幕？": return ".违规弹幕";
+case "在评论区看到与自己观点不同的评论，正确的做法？": return ".和谐讨论";
+case "以下哪种评论比较适宜？": return ".文明回复";
+case "在观看视频中遇到过长弹幕遮挡屏幕时应该？": return ".进行举报";
+case "在《不剧透的才是好孩子》中剧透一万次将会？": return ".被哈老乱守护一辈子";
+case "当发现良心而且准确的科普弹幕时以下哪种做法是正确的？": return ".在心里默默给个赞";
+case "视频卡住正确的处理姿势是？": return ".刷新页面";
+case "在承包页面哪种弹幕是不合适的？": return ".阵亡者名单";
+case "在观看综艺节目过程中下面那条弹幕比较合适？": return ".吐槽节目环节或内容";
+case "喜欢某个up主的翻唱，发什么弹幕合适？": return ".以上弹幕都合适";
+case "看到某系列视频更新了，以下哪种弹幕适合发送？": return ".文明吐槽";
+case "使用高级弹幕应当？": return ".结合视频内容";
+case "发弹幕时应当要注意不要发一些涉及私人信息的内容，以下哪种弹幕是不涉及私人信息的？": return ".哈哈哈";
+case "在评论区遇到有人吵架应该？": return ".举报过激言论";
+case "在二小姐的bgm《U.N.オーエンは彼女なのか？》中刷死亡华尔兹这样的行为是？": return ".引战";
+case "在观看番剧过程中，有角色领便当的时候以下行为适当的是？": return ".表示默哀";
+case "在观看新番时，以下哪种弹幕比较适宜？": return ".233";
+case "如果发现自己的账号被误封应该？": return ".联系客服进行反馈";
+case "下面哪条弹幕是地域攻击？": return ".某某地方的都是坏淫";
+case "作为一名有素质的原作党应该发哪种弹幕？": return ".设定上的一些科普说明";
+case "发现视频有(画质,字幕,花屏等)问题时，下面哪种行为不合适？": return ".发弹幕评论辱骂";
+case "看到评论区发神秘链接，下面哪个是合适的？": return ".举报评论";
+case "视频刚好没弹幕，下面哪种弹幕是合适的？": return ".合适地进行吐槽";
+case "在观看动物区视频过程中哪种弹幕符合弹幕礼仪？": return ".好萌";
+case "以下哪个是正确的举报理由？": return ".引战弹幕";
+case "过长的弹幕会导致？": return ".遮挡住屏幕造成他人无法正常观看";
+case "在多P视频中应该？": return ".以上做法都不合适";
+case "用一些梗吐槽时应该？": return ".结合画面巧妙运用";
+case "复制UP主签名并发送弹幕会造成怎样结果？": return ".会被系统禁言";
+case "在番剧片尾，哪种弹幕合适？": return ".以上弹幕都合适";
+case "弹幕上限的标准从哪里查询？": return ".网站下方全站使用说明";
+case "在观看视频中遇到违规弹幕时应该？": return ".进行举报";
+case "下列哪一条不是过长弹幕？": return ".233";
+case "以下哪种评论符合评论礼仪？": return ".和大家愉快的讨论";
+case "发违规评论会被怎么样？": return ".以上都有可能";
+case "剧透神座下天使是（详见 http://www.bilibili.com/video/av1278409/）？": return ".哈老乱";
+case "前排留名的评论是属于哪种类型的评论？": return ".无意义灌水评论";
+case "在观看翻唱区视频时，哪种符合弹幕礼仪？": return ".以上都不符合";
+case "遇到过于低俗空耳出现在视频中应该？": return ".以上做法都有误";
+case "在观看视频中出现过多重复的弹幕时，正确的做法？": return ".添加屏蔽关键词";
+case "如果想要删除自己发的不正确的评论可以？": return ".举报自己的评论并填写理由";
+case "以下哪种弹幕用词会比较适宜，不会使人不愉快？": return ".2333";
+case "遇到大量弹幕争吵，以下哪个是不可取的？": return ".加入争吵";
+case "遇到发qq群的弹幕。下面哪个是合适的？": return ".举报弹幕";
+case "以下能举报的弹幕？": return ".无意义刷屏弹幕";
+case "刷屏弹幕会造成什么影响？": return ".遮挡屏幕导致他人无法正常观看";
+case "在番剧片尾，哪种弹幕不合适？": return ".以上弹幕都不合适";
+case "豆腐脑是咸的好还是甜的好，这是属于什么类型弹幕？": return ".引战弹幕";
+case "”哔哩哔哩是一家弹幕站点,大家可以在这里找到许多的欢乐“一句笔画数为？": return ".189";
+case "当看到自己喜欢的角色出场时不应该？": return ".弹幕刷屏";
+case "观看游戏解说视频时，下面哪个弹幕是合适的？": return ".挺有意思，up主加油";
+case "看排行类视频的时候，以下那种弹幕比较适宜？": return ".讨论关注作品信息";
+case "弹幕颜色太深，看不到画面怎么办？": return ".调低弹幕透明度";
+case "在视频中出现”xx年xx月xx日 xx:xx:xx留名”的弹幕，这种弹幕属于？": return ".以上都是";
+case "下面哪一条不是引战弹幕？": return ".我不做人啦";
+case "同屏弹幕较多看不到字幕时，以下哪个措施是有效的？": return ".在播放器设置中调低弹幕密度或开启防挡字幕";
+case "在做科普的过程中应当？": return ".有理有据";
+case "在评论中遇到人身攻击应该？": return ".举报该评论";
+case "在发送的弹幕时添加自己的id和署名这种弹幕属于？": return ".影响观看的违规弹幕";
+case "遇到喜欢的up主更新了怎么办？": return ".坐下来慢慢看";
+case "遇到淘宝广告弹幕，下面哪个是合适的？": return ".举报弹幕";
+case "对某个视频突然不想看了怎么办？": return ".默默关掉视频";
+case "发评论正确的姿势是？": return ".讨论与视频有关内容";
+case "遇到非常明显的钓鱼引战评论应当？": return ".举报并填写适当的理由";
+case "引战弹幕会造成什么影响？": return ".影响大家的观看体验";
+case "哪种发弹幕的方式会被禁言？": return ".遮挡屏幕的无关竖排弹幕";
+case "观看视频正确的姿势是？": return ".保持屋内明亮";
 //
 default: return undefined;
 }} //结束switch和题库函数
-} //结束运行确认
-}else{ //URL检查
-    alert("请在正确的页面上运行脚本！");
-}
-}catch(e){ //系统错误处理
-    alert("系统错误！\n错误信息：\n" + e);
-}
